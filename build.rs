@@ -85,7 +85,7 @@ fn main() {
     };
 
     fs::write(&dest_path, TokenStream::from(out).to_string()).unwrap();
-    println!("cargo:rerun-if-changed=build.rs");
+    // println!("cargo:rerun-if-changed=build.rs");
     // fs::create_dir(&output).expect("couldn't create dir");
     // panic!("just because");
 }
